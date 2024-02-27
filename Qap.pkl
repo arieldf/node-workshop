@@ -2,6 +2,7 @@ module Tdip.Qapio
 
 typealias Pages = Mapping<String, String>
 
+
 typealias Identifier = String(matches(Regex(#"(^[a-zA-Z_$][\w$]*$)"#)))
 
 abstract class QapBase {
