@@ -8,7 +8,7 @@ abstract class QapBase {
   id: Identifier;
   fixed type: String = getClass().toString()
   abstract props: Dynamic;
-  index: String = "/"
+  index: String = "/df"
   pages: Pages
 }
 
