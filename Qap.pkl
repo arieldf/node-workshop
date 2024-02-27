@@ -1,0 +1,21 @@
+module Tdip.Qapio
+
+typealias Pages = Mapping<String, String>
+
+typealias Identifier = String(matches(Regex(#"(^[a-zA-Z_$][\w$]*$)"#)))
+
+abstract class QapBase {
+  id: Identifier;
+  fixed type: String = getClass().toString()
+  abstract props: Dynamic;
+  index: String = "/"
+  pages: Pages
+}
+
+class NotUsed {
+
+}
+
+class Qap extends QapBase {
+  props: NotUsed;
+}
