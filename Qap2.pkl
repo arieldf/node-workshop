@@ -13,4 +13,4 @@ fixed type: String = getClass().toString()
 props: ScreenProps
 index: String = "/"
 pages: Pages
-miff: String
+miffm: String
